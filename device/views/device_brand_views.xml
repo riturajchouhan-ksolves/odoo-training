@@ -1,0 +1,27 @@
+<odoo>
+    <!-- Device Brand Tree View -->
+    <record id="view_device_brand_tree" model="ir.ui.view">
+        <field name="name">device.brand.tree</field>
+        <field name="model">device.brand</field>
+        <field name="arch" type="xml">
+            <tree string="Device Brands">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Device Brand Form View -->
+    <record id="view_device_brand_form" model="ir.ui.view">
+        <field name="name">device.brand.form</field>
+        <field name="model">device.brand</field>
+        <field name="arch" type="xml">
+            <form string="Device Brand">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

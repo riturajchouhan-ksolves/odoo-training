@@ -1,0 +1,89 @@
+msgid "Name"
+msgstr "नाम"
+
+msgid "Name / Serial"
+msgstr "नाम / सीरियल"
+
+msgid "Shared"
+msgstr "साझा"
+
+msgid "Device Type"
+msgstr "उपकरण प्रकार"
+
+msgid "Device Brand"
+msgstr "उपकरण ब्रांड"
+
+msgid "Device Model"
+msgstr "उपकरण मॉडल"
+
+msgid "Attribute"
+msgstr "विशेषता"
+
+msgid "The name '{record.name}' must be unique."
+msgstr "नाम '{record.name}' अद्वितीय होना चाहिए।"
+
+msgid "The combination of Device and Device Attribute must be unique. This combination already exists."
+msgstr "उपकरण और उपकरण विशेषता का संयोजन अद्वितीय होना चाहिए। यह संयोजन पहले से मौजूद है।"
+
+msgid "The Device Attribute name '{record.name}' must be unique."
+msgstr "उपकरण विशेषता का नाम '{record.name}' अद्वितीय होना चाहिए।"
+
+msgid "The combination of Name and Device Attribute must be unique. '{record.name}' already exists for this Device Attribute."
+msgstr "नाम और उपकरण विशेषता का संयोजन अद्वितीय होना चाहिए। '{record.name}' पहले से इस उपकरण विशेषता के लिए मौजूद है।"
+
+msgid "The Device Brand name '{record.name}' must be unique."
+msgstr "उपकरण ब्रांड का नाम '{record.name}' अद्वितीय होना चाहिए।"
+
+msgid "The combination of Name, Device Type, and Device Brand must be unique."
+msgstr "नाम, उपकरण प्रकार और उपकरण ब्रांड का संयोजन अद्वितीय होना चाहिए।"
+
+msgid "The combination of Name and Code must be unique."
+msgstr "नाम और कोड का संयोजन अद्वितीय होना चाहिए।"
+
+msgid "Code"
+msgstr "कोड"
+
+msgid "Start Date"
+msgstr "प्रारंभ तिथि"
+
+msgid "Expire Date"
+msgstr "समाप्ति तिथि"
+
+msgid "State"
+msgstr "स्थिति"
+
+msgid "New"
+msgstr "नया"
+
+msgid "Draft"
+msgstr "मूल प्रारूप"
+
+msgid "Approved"
+msgstr "स्वीकृत"
+
+msgid "Returned"
+msgstr "वापस किया गया"
+
+msgid "Rejected"
+msgstr "अस्वीकृत"
+
+msgid "Employee"
+msgstr "कर्मचारी"
+
+msgid "Device"
+msgstr "उपकरण"
+
+msgid "Device Type"
+msgstr "उपकरण प्रकार"
+
+msgid "Device Brand"
+msgstr "उपकरण ब्रांड"
+
+msgid "Device Model"
+msgstr "उपकरण मॉडल"
+
+msgid "Device Attribute"
+msgstr "उपकरण विशेषता"
+
+msgid "Device Attribute Value"
+msgstr "उपकरण विशेषता मान"

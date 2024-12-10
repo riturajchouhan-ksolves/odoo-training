@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="action_subject" model="ir.actions.act_window">
+        <field name="name">Subjects</field>
+        <field name="res_model">school.subject</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem id="menu_odoo_school" name="Odoo School"/>
+    <menuitem id="menu_student" name="Students" parent="menu_odoo_school" action="action_student" sequence="10"/>
+    <menuitem id="menu_subject" name="Subjects" parent="menu_odoo_school" action="action_subject" sequence="20"/>
+    <menuitem id="menu_class" name="Classes" parent="menu_odoo_school" action="action_classes" sequence="30"/>
+
+
+
+
+</odoo>

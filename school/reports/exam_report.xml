@@ -1,0 +1,29 @@
+<odoo>
+    <template id="report_exam_marks" name="Exam Marks Report">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-foreach="docs" t-as="student">
+                    <div>
+                        <h3>Student: <t t-esc="student.student_id.name"/></h3>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Subject</th>
+                                    <th>Marks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                 <t t-foreach="student.student_id.exams" t-as="exam">
+                                    <tr>
+                                        <td> <t t-esc="exam.subject_id.name"/> </td>
+                                        <td> <t t-esc="exam.total_marks"/> </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

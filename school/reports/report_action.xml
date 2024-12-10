@@ -1,0 +1,18 @@
+
+<odoo>
+<!--<report id="action_report_exam_marks"-->
+<!--        model="generate.report"-->
+<!--        string="Exam Marks Report"-->
+<!--        report_type="qweb-pdf"-->
+<!--        name="school.report_exam_marks"-->
+<!--        file="school.report_exam_marks"-->
+<!--        attachment="False"/>-->
+    <record id="action_report_exam_marks" model="ir.actions.report">
+    <field name="name">Print Exam Report</field>
+    <field name="model">generate.report</field>
+    <field name="report_name">school.report_exam_marks</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_file">school.report_exam_marks</field>
+    <field name="print_report_name">'Student_Report_'</field>
+</record>
+</odoo>

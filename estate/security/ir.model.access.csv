@@ -1,0 +1,14 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_estate_property_managers,access.estate_property,model_estate_property,estate.group_managers,1,1,1,1
+access_estate_property_public_users,access.estate_property,model_estate_property,estate.group_public_users,1,0,0,0
+access_property_type_managers,access.property_type,model_property_type,estate.group_managers,1,1,1,1
+access_property_type_public_users,access.property_type,model_property_type,estate.group_public_users,1,0,0,0
+access_property_tags_managers,access.property_tags,model_property_tags,estate.group_managers,1,1,1,1
+access_property_tags_public_users,access.property_tags,model_property_tags,estate.group_public_users,1,0,0,0
+access_property_area_area_managers,access.property_area_area,model_property_area_area,estate.group_managers,1,1,1,1
+access_property_area_area_public_users,access.property_area_area,model_property_area_area,estate.group_public_users,1,0,0,0
+
+
+
+
+

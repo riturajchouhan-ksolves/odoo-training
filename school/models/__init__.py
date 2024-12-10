@@ -1,0 +1,1 @@
+from . import odoo_school,school_subject,school_class,school_fee,exams,exam_wizard,generate_report

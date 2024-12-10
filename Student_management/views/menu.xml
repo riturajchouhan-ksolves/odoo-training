@@ -1,0 +1,89 @@
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<!--<odoo>-->
+
+
+<!--&lt;!&ndash; form view&ndash;&gt;-->
+<!-- <record id="view_student_record_form" model="ir.ui.view">-->
+<!--  <field name="name">student.record.form</field>-->
+<!--  <field name="model">student.record</field>-->
+<!--  <field name="arch" type="xml">-->
+<!--   <form>-->
+<!--    <sheet>-->
+<!--     <group>-->
+<!--      <group>-->
+<!--       <field name="first_name"/>-->
+<!--       <field name="last_name"/>-->
+<!--       <field name="father"/>-->
+<!--       <field name="mother"/>-->
+
+
+<!--&lt;!&ndash;       <field name="admission_date"/>&ndash;&gt;-->
+<!--      </group>-->
+<!--      <group>-->
+<!--&lt;!&ndash;       <field name="communication_address"/>&ndash;&gt;-->
+<!--&lt;!&ndash;       <field name="same_as_communication_address"/>&ndash;&gt;-->
+<!--&lt;!&ndash;       <field name="permanent_address" invisible="same_as_communication_address==True"/>&ndash;&gt;-->
+<!--       <field name="phone"/>-->
+<!--       <field name="email"/>-->
+<!--&lt;!&ndash;       <field name="mark"/>&ndash;&gt;-->
+<!--      </group>-->
+<!--     </group>-->
+<!--    </sheet>-->
+<!--   </form>-->
+<!--  </field>-->
+<!-- </record>-->
+
+<!--&lt;!&ndash; Tree view&ndash;&gt;-->
+<!-- <record id="view_student_record_tree" model="ir.ui.view">-->
+<!--  <field name="name">view.student.record.tree</field>-->
+<!--  <field name="model">student.record</field>-->
+<!--  <field name="arch" type="xml" >-->
+<!--   <tree>-->
+<!--    <field name="first_name"/>-->
+<!--    <field name="last_name"/>-->
+<!--    <field name="phone"/>-->
+<!--    <field name="email"/>-->
+<!--   </tree>-->
+<!--  </field>-->
+<!-- </record>-->
+
+
+<!--&lt;!&ndash; calendar view&ndash;&gt;-->
+<!-- <record id="view_student_record_calendar" model="ir.ui.view">-->
+<!--  <field name="name">student.record.calendar</field>-->
+<!--  <field name="model">student.record</field>-->
+<!--  <field name="arch" type="xml">-->
+<!--   <calendar string="Student record" create="0" mode="month" event_limit="5" quick_create="0">-->
+<!--    <field name="first_name" avatar_field="avatar_128" options="{'icon':'fa-fa-users'}"/>-->
+<!--   </calendar>-->
+<!--  </field>-->
+<!-- </record>-->
+
+
+
+<!--    <record id="action_student_tree" model="ir.actions.act_window">-->
+<!--        <field name="name">Student List</field>-->
+<!--        <field name="res_model">student.record</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="view_id" ref="view_student_record_tree"/>-->
+<!--        <field name="target">current</field>-->
+<!--    </record>-->
+
+<!--    <record id="action_student_calendar" model="ir.actions.act_window">-->
+<!--        <field name="name">Student Calendar</field>-->
+<!--        <field name="res_model">student.record</field>-->
+<!--        <field name="view_mode">calendar</field>-->
+<!--        <field name="view_id" ref="view_student_record_calendar"/>-->
+<!--        <field name="target">current</field>-->
+<!--    </record>-->
+
+<!--    <menuitem id="root_student"-->
+<!--              name="Student"-->
+<!--    />-->
+<!--    <menuitem id="student"-->
+<!--              name="Details"-->
+<!--              action="action_student_tree"-->
+<!--              parent="root_student"-->
+<!--    />-->
+
+<!--</odoo>-->

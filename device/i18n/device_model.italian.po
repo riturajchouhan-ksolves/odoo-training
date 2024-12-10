@@ -1,0 +1,101 @@
+msgid "Name / Code"
+msgstr "Nome / Codice"
+
+msgid "Device"
+msgstr "Dispositivo"
+
+msgid "Employee"
+msgstr "Dipendente"
+
+msgid "Start Date"
+msgstr "Data di inizio"
+
+msgid "Expire Date"
+msgstr "Data di scadenza"
+
+msgid "State"
+msgstr "Stato"
+
+msgid "New"
+msgstr "Nuovo"
+
+msgid "Draft"
+msgstr "Bozza"
+
+msgid "Approved"
+msgstr "Approvato"
+
+msgid "Returned"
+msgstr "Restituito"
+
+msgid "Rejected"
+msgstr "Rifiutato"
+
+msgid "The name '{record.name}' must be unique."
+msgstr "Il nome '{record.name}' deve essere unico."
+
+msgid "The combination of Device and Device Attribute must be unique. This combination already exists."
+msgstr "La combinazione di Dispositivo e Attributo del Dispositivo deve essere unica. Questa combinazione esiste già."
+
+msgid "The Device Attribute name '{record.name}' must be unique."
+msgstr "Il nome dell'Attributo del Dispositivo '{record.name}' deve essere unico."
+
+msgid "The combination of Name and Device Attribute must be unique. '{record.name}' already exists for this Device Attribute."
+msgstr "La combinazione di Nome e Attributo del Dispositivo deve essere unica. '{record.name}' esiste già per questo Attributo del Dispositivo."
+
+msgid "The Device Brand name '{record.name}' must be unique."
+msgstr "Il nome del Marchio del Dispositivo '{record.name}' deve essere unico."
+
+msgid "The combination of Name, Device Type, and Device Brand must be unique."
+msgstr "La combinazione di Nome, Tipo di Dispositivo e Marchio di Dispositivo deve essere unica."
+
+msgid "The combination of Name and Code must be unique."
+msgstr "La combinazione di Nome e Codice deve essere unica."
+
+msgid "Code"
+msgstr "Codice"
+
+msgid "Start Date"
+msgstr "Data di inizio"
+
+msgid "Expire Date"
+msgstr "Data di scadenza"
+
+msgid "State"
+msgstr "Stato"
+
+msgid "New"
+msgstr "Nuovo"
+
+msgid "Draft"
+msgstr "Bozza"
+
+msgid "Approved"
+msgstr "Approvato"
+
+msgid "Returned"
+msgstr "Restituito"
+
+msgid "Rejected"
+msgstr "Rifiutato"
+
+msgid "Employee"
+msgstr "Dipendente"
+
+msgid "Device"
+msgstr "Dispositivo"
+
+msgid "Device Type"
+msgstr "Tipo di Dispositivo"
+
+msgid "Device Brand"
+msgstr "Marchio di Dispositivo"
+
+msgid "Device Model"
+msgstr "Modello di Dispositivo"
+
+msgid "Device Attribute"
+msgstr "Attributo del Dispositivo"
+
+msgid "Device Attribute Value"
+msgstr "Valore dell'Attributo del Dispositivo"

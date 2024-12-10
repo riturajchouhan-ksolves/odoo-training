@@ -1,0 +1,9 @@
+<odoo>
+    <menuitem id="device_management_menu" name="Device Management" sequence="10"/>
+    <menuitem id="device_management_device_model_menu" name="Device Model" parent="device_management_menu" action="action_device_model" sequence="1"/>
+    <menuitem id="device_management_device_assignments_menu" name="Device Assignments" parent="device_management_menu" action="action_device_assignment" sequence="2"/>
+    <menuitem id="device_management_device_brands_menu" name="Device Brands" parent="device_management_menu" action="action_device_brand" sequence="3"/>
+    <menuitem id="device_management_device_attributes_menu" name="Device Attributes" parent="device_management_menu" action="action_device_attribute" sequence="4"/>
+    <menuitem id="device_management_employees_menu" name="Employee Devices" parent="device_management_menu" action="action_employee_device" sequence="5"/>
+    <menuitem id="device_management_devices_menu" name="Devices" parent="device_management_menu" action="action_device_device" sequence="6"/>
+</odoo>

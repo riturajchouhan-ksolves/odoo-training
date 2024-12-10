@@ -1,0 +1,1 @@
+from . import device,device_assignment,device_attribute,device_attribute_assignment,device_attribute_value,device_brand,device_model,device_type

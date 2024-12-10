@@ -1,0 +1,17 @@
+<odoo>
+    <!-- Inherit the existing form view for school.class -->
+        <record id="view_class_inherit" model="ir.ui.view">
+            <field name="name">school.school_class.inherit</field>
+            <field name="model">school.class</field>
+            <field name="inherit_id" ref="school.view_class_form"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//sheet/group" position="inside">
+                    <field name="teacher_id" domain="[('is_teacher', '=', True)]"/>
+                </xpath>
+
+
+            </field>
+        </record>
+</odoo>

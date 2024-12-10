@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_odoo_school,odoo_school,model_odoo_school,base.group_user,1,1,1,1
+access_school_subject,school_subject,model_school_subject,base.group_user,1,1,1,1
+access_school_class,school_class,model_school_class,base.group_user,1,1,1,1
+access_school_fee,school_fee,model_school_fee,base.group_user,1,1,1,1
+access_odoo_exams,odoo_exams,model_odoo_exams,base.group_user,1,1,1,1
+access_create_exam_wizard,create_exam_wizard,model_create_exam_wizard,base.group_user,1,1,1,1
+access_generate_report,generate_report,model_generate_report,base.group_user,1,1,1,1
+
+
+

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+     <record id="action_set_inactive_if_cancelled" model="ir.actions.server">
+        <field name="name">Set Property Inactive If Cancelled</field>
+        <field name="model_id" ref="model_estate_property"/>
+         <field name="binding_model_id" ref="model_estate_property"/>
+        <field name="state">code</field>
+        <field name="code">
+           action=records.change_status()
+        </field>
+     </record>
+
+
+    <!-- Form View Definition -->
+    <record id="estate_form" model="ir.ui.view">
+        <field name="name">estate.property.form</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_do_book" type="object" string="Booked" class="btn-primary"></button>
+                    <button name="action_do_cancel" type="object" string="Cancelled" class="btn-danger"></button>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="fname"/>
+                        <field name="lname"/>
+                        <field name="state"/>
+                        <field name="gender" />
+                        <field name="property_type_id"/>
+                        <field name="property_tags_ids" widget="many2many_tags"/>
+                        <field name="property_area_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                        <field name="age" />
+                        <field name="date_of_birth" />
+                        <field name="status" />
+                        <field name="total_area"/>
+                        <field name="price_per_sqft"/>
+                        <field name="total_price"/>
+                        <field name="has_pool" widget="boolean" string="has pool"/>
+                        <field name="is_active" readonly="1" widget="boolean" string="Active Status"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- Tree View Definition -->
+    <record id="estate_tree" model="ir.ui.view">
+        <field name="name">estate.property.tree</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <tree decoration-success="state=='sold'" decoration-danger="state=='active'" decoration-warning="state=='draft'">
+                <field name="property_reference"/>
+                <field name="fname"/>
+                <field name="lname"/>
+                <field name="state" />
+                <field name="gender" />
+                <field name="status" />
+                <field name="property_type_id"/>
+                <field name="property_tags_ids" widget="many2many_tags" />
+                <field name="property_area_ids" widget="many2many_tags" />
+                <field name="age"/>
+                <field name="date_of_birth"/>
+                <field name="total_area"/>
+                <field name="price_per_sqft"/>
+                <field name="total_price"/>
+                <field name="has_pool"/>
+                 <field name="is_active" widget="boolean" string="Active Status"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+<!--    kanban view-->
+    <record id="estate_kanban" model="ir.ui.view" >
+        <field name="name">estate.property.kanban</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="state">
+                <field name="fname"/>
+                <field name="lname"/>
+                <field name="state" decoration-success="state=='sold'" decoration-danger="state=='active'" decoration-warning="state=='draft'"/>
+                <field name="gender" />
+                <field name="status" />
+                <field name="property_type_id"/>
+                <field name="property_tags_ids" widget="many2many_tags"/>
+                <field name="property_area_ids" widget="many2many_tags"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_card">
+                            <div class="oe_kanban_global_click">
+                                <strong>First Name : </strong>
+                                <field name="fname"/>
+                                <div style="height:25px"></div>
+                                <strong>Last Name :</strong>
+                                <field name="lname"/>
+                                <div style="height:25px"></div>
+                                <strong>State :</strong>
+                                <field name="state"/>
+                                 <div style="height:25px"></div>
+                                <strong>Gender :</strong>
+                                 <field name="gender" />
+                                <div style="height:25px"></div>
+                                <strong>Status :</strong>
+                                <field name="status"/>
+                                <div style="height:25px"></div>
+                                <strong>Property Type :</strong>
+                                  <field name="property_type_id"/>
+                                <div style="height:25px"></div>
+                                <strong>Property Tags :</strong>
+                                <field name="property_tags_ids" widget="many2many_tags"/>
+                                <div style="height:25px"></div>
+                                 <strong>Property area :</strong>
+                                <field name="property_area_ids"  widget="many2many_tags"/>
+                                <div style="height:25px"></div>
+                                <strong>Age :</strong>
+                                <field name="age"/>
+                                <div style="height:25px"></div>
+                                <strong>DOB :</strong>
+                                <field name="date_of_birth"/>
+                                <div style="height:25px"></div>
+                                <strong>Total Price :</strong>
+                                 <field name="total_area"/>
+                                <div style="height:25px"></div>
+                                <strong>Price per sqft :</strong>
+                                <field name="price_per_sqft"/>
+                                <div style="height:25px"></div>
+                                <strong>Total Price :</strong>
+                                <field name="total_price"/>
+                                 <div style="height:25px"></div>
+                                <strong>Has Pool:</strong>
+                                <field name="has_pool" widget="boolean"/>
+                                <div style="height:25px"></div>
+                            <strong>Active Status:</strong>
+                            <field name="is_active" widget="boolean"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+<!--    pivot view-->
+    <record id="estate_pivot" model="ir.ui.view">
+        <field name="name">estate.property.pivot</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="state" type="row"/>
+                <field name="property_type_id" type="column"/>
+                <field name="total_area" type="measure"/>
+                <field name="total_price" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+<!--    pie chart view-->
+
+    <record id="estate_pie_chart" model="ir.ui.view">
+        <field name="name">estate.property.pie.chart</field>
+        <field name="model">estate.property</field>
+        <field name="arch" type="xml">
+            <graph type="pie">
+                <field name="state"/>
+                <field name="total_area" sum="True"/>
+            </graph>
+        </field>
+    </record>
+
+
+
+    <!-- Action Definition -->
+    <record id="action_estate" model="ir.actions.act_window">
+        <field name="name">Estate</field>
+        <field name="res_model">estate.property</field>
+        <field name="view_mode">tree,form,kanban,pivot,graph</field>
+        <field name="view_id" ref="estate_tree"/>
+
+    </record>
+
+    <!-- Menu Item -->
+    <menuitem id="menu_estate" name="Estate Property" action="action_estate"/>
+    <menuitem id="menu_manager_only" name="Manager Menu" groups="group_managers"/>
+    <menuitem id="menu_public_users" name="Public Menu" groups="group_public_users"/>
+</odoo>

@@ -1,0 +1,34 @@
+<odoo>
+    <!-- Device Attribute Tree View -->
+    <record id="view_device_attribute_tree" model="ir.ui.view">
+        <field name="name">device.attribute.tree</field>
+        <field name="model">device.attribute</field>
+        <field name="arch" type="xml">
+            <tree string="Device Attributes">
+                <field name="name"/>
+                <field name="device_type_id"/>
+                <field name="device_attribute_value_ids" widget="many2many_tags"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Device Attribute Form View -->
+    <record id="view_device_attribute_form" model="ir.ui.view">
+        <field name="name">device.attribute.form</field>
+        <field name="model">device.attribute</field>
+        <field name="arch" type="xml">
+            <form string="Device Attribute">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="device_type_id"/>
+                        <field name="required"/>
+                    </group>
+                    <group>
+                        <field name="device_attribute_value_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

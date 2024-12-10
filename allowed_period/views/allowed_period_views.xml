@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_allowed_period_form" model="ir.ui.view">
+        <field name="name">allowed.period.form</field>
+        <field name="model">allowed.period</field>
+        <field name="arch" type="xml">
+            <form string="Allowed Period">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="allowed_start_date"/>
+                        <field name="allowed_end_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_allowed_period_tree" model="ir.ui.view">
+        <field name="name">allowed.period.tree</field>
+        <field name="model">allowed.period</field>
+        <field name="arch" type="xml">
+            <tree string="Allowed Periods">
+                <field name="name"/>
+                <field name="allowed_start_date"/>
+                <field name="allowed_end_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="allowed_period_action" model="ir.actions.act_window">
+        <field name="name">Allowed Periods</field>
+        <field name="res_model">allowed.period</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+    </record>
+    <menuitem id="allowed_period_menu" name="Allowed Periods" sequence="10"/>
+    <menuitem id="allowed_period_submenu" name="Manage Allowed Periods" parent="allowed_period_menu" action="allowed_period_action"/>
+
+</odoo>
